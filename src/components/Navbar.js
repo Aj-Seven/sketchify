@@ -2,21 +2,21 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <nav className="bg-blue-500 border-b border-gray-200 text-white p-2 py-4 shadow-md">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+    <nav className="bg-blue-500 border-b border-gray-200 text-white p-1 shadow-md">
+      <div className="max-w-6xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="text-2xl font-bold">
-          SketchConverter
+        <a href="/" className="flex items-center">
+          <img src="/assets/logo.png" alt="Logo" width={52} height={52} />
+          <span className="text-2xl font-bold ml-2">Sketchify</span>
         </a>
 
-        <div>
-          <a
-            href="https://github.com/aj-seven/sketchify"
-            className="text-white text-md hover:text-gray-300"
-          >
-            Github
-          </a>
-        </div>
+        <a
+          href="https://github.com/aj-seven/sketchify"
+          className="text-md hover:text-gray-300 flex items-center"
+        >
+          <img src="/assets/github.svg" alt="Logo" width={24} height={24} />
+          <span className="ml-1">Github</span>
+        </a>
       </div>
     </nav>
   );
