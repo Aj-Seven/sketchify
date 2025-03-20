@@ -9,7 +9,8 @@ const Controls = ({
   setContrast,
 }) => {
   return (
-    <div className="w-full max-w-md bg-white p-4 rounded-lg shadow-md mt-6">
+    <div className="w-full max-w-lg bg-white p-4 rounded-lg shadow-md mt-6">
+      <h3 className="text-xl font-bold mb-2 underline"> Controls: </h3>
       <label className="block text-gray-700 font-medium">Grayscale</label>
       <input
         type="range"
@@ -20,7 +21,6 @@ const Controls = ({
         onChange={(e) => setGrayscale(parseFloat(e.target.value))}
         className="w-full mb-2"
       />
-
       <label className="block text-gray-700 font-medium">Blur</label>
       <input
         type="range"
@@ -31,7 +31,6 @@ const Controls = ({
         onChange={(e) => setBlurAmount(parseFloat(e.target.value))}
         className="w-full mb-2"
       />
-
       <label className="block text-gray-700 font-medium">Contrast</label>
       <input
         type="range"

@@ -8,7 +8,7 @@ const ImgSketchConverter = () => {
   const [imageBitmap, setImageBitmap] = useState(null);
 
   const [grayscale, setGrayscale] = useState(1);
-  const [blurAmount, setBlurAmount] = useState(5);
+  const [blurAmount, setBlurAmount] = useState(7);
   const [contrast, setContrast] = useState(1.5);
 
   const handleImageUpload = async (e) => {

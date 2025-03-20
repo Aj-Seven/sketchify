@@ -70,26 +70,40 @@ const SketchCanvas = ({
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex flex-wrap justify-center items-center gap-6 mt-6">
+    <div className="container mx-auto py-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+        {/* Original Image Section */}
         {imageSrc && (
-          <img
-            src={imageSrc}
-            alt="Original"
-            className="border border-gray-300 shadow-lg w-64 h-auto"
-          />
+          <div className="bg-white p-2 rounded-xl shadow-md border">
+            <h2 className="text-2xl font-semibold text-gray-800">
+              Original Image
+            </h2>
+            <img
+              src={imageSrc}
+              alt="Original"
+              className="w-full h-auto mt-4 border border-gray-300 rounded-lg shadow"
+            />
+          </div>
         )}
-        <canvas
-          ref={canvasRef}
-          className="border border-gray-300 shadow-lg w-64 h-auto"
-        ></canvas>
+        {/* Sketch Image Section */}
+        <div className="bg-white p-2 rounded-xl shadow-md border">
+          <h2 className="text-2xl font-semibold text-gray-800">Sketch Image</h2>
+          <canvas
+            ref={canvasRef}
+            className="w-full h-auto mt-4 border border-gray-300 rounded-lg shadow"
+          ></canvas>
+        </div>
       </div>
-      <button
-        className="mt-4 px-6 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition"
-        onClick={downloadSketch}
-      >
-        Download Sketch
-      </button>
+
+      {/* Button Section */}
+      <div className="flex justify-center mt-8">
+        <button
+          className="px-6 py-3 font-bold bg-green-500 text-white text-lg rounded-xl shadow-md hover:bg-green-600 transition-all"
+          onClick={downloadSketch}
+        >
+          Download Sketch
+        </button>
+      </div>
     </div>
   );
 };

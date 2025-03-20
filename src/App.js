@@ -6,12 +6,12 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <div className="min-h-screen bg-gray-200 flex flex-col items-center px-6 py-10">
-        <h1 className="text-4xl font-bold text-gray-800 mb-10">
+      <div className="min-h-screen bg-gray-200 flex flex-col items-center px-2 py-14">
+        <h1 className="text-4xl font-bold text-gray-800 mb-12">
           Image to Sketch Converter
         </h1>
         <ImgSketchConverter />
-        <footer className="mt-10 text-center text-md text-gray-500 text-gray-500">
+        <footer className="mt-10 text-center text-md text-gray-500">
           Built with ❤️ using React & TailwindCSS by Aj7
         </footer>
       </div>
