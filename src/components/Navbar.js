@@ -11,7 +11,7 @@ const NavBar = () => {
 
         <div>
           <a
-            href="https://github.com/aj-seveen/image-sketch"
+            href="https://github.com/aj-seven/sketchify"
             className="text-white text-md hover:text-gray-300"
           >
             Github
